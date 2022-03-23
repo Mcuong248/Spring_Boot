@@ -34,4 +34,4 @@ Trả lời :<br>
 <b> Câu 13 : Giải thích ý nghĩa của @RequestBody trong đoạn code dưới đây</b><br>
 - @Requestbody giúp ta gửi dữ liệu dưới dạng body Json lên sever<br>
 <b> Câu 14 : Cổng mặc định ứng dụng SpringBoot là 8080. Hãy google cách để thay đổi cổng lắng nghe mặc định </b><br>
-- Vào file application.properties thay đổi port ex : server.port=8081
+- Vào file application.properties thay đổi port ex : server.port=8081s
