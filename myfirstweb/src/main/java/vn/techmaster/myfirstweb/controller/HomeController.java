@@ -1,11 +1,18 @@
 package vn.techmaster.myfirstweb.controller;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import vn.techmaster.myfirstweb.model.Student;
 
 @Controller
 @RequestMapping("/")
@@ -25,5 +32,30 @@ public class HomeController {
         }
         return stringBuilder + "";
     }
+    @PostMapping("/bmi")
+    @ResponseBody
+    public Double bmi(@RequestParam Double weight, @RequestParam Double height) {
+        return weight / (height * height);
+    }
+    ArrayList<Student> listStudent = new ArrayList<Student>() {{
+        listStudent.add(new Student(01,"Tran Van Tam", 26));
+        listStudent.add(new Student(02,"Tran Van Hung", 27));
+    }};
+    public HomeController(ArrayList<Student> listStudent) {
+        this.listStudent = listStudent;
+    }
+    @GetMapping("/listStudent")
+    @ResponseBody
+    public List<Student>  getStudentList(){
+        return listStudent;
+    }
+    @PostMapping("/addStudent")
+    @ResponseBody
+    public Student addStudent(@RequestBody Student student){
+        listStudent.add(student);
+        return student;
+    }
+
 }
+
 
