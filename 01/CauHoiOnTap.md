@@ -2,7 +2,6 @@
  - GroupId là id của nhóm dự án. Nói chung, nó là duy nhất trong một tổ chức<br>
  - ArtifactId là id của dự án. Nó chỉ định tên của dự án. Một phần của tệp XML<br>
 <b>Câu 2 : Tại sao phải đảo ngược tên miền trong <groupId>vn.techmaster</groupId>?</b> <br>
-Trả lời : <br>
 - Việc đảo ngược tên miền trong groupId giúp chúng ta nhóm các modul của dự án dễ dàng hơn<br>
 <b>Câu 3 : SpringBoot có 2 cơ chế để quản lý thư viện. Hãy kể tên chúng?</b><br>
 Trả lời : <br>
