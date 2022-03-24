@@ -27,7 +27,7 @@
 - @GetMapping là ánh xạ đến HTTP request có method GET
 - @PostMapiing là ánh xạ đên HTTP request có method POST<br>
 <b> Câu 12 : Trong các annotation @RequestMapping, @GetMapping, @PostMapping… có tham số produces = MediaType.XXXX ý nghĩa tham số này là gì?</b><br>
--Định dạng dữ liệu trả về response.Content_Type<br>
+- Định dạng dữ liệu trả về response.Content_Type<br>
 <b> Câu 13 : Giải thích ý nghĩa của @RequestBody trong đoạn code dưới đây</b><br>
 - @Requestbody giúp ta gửi dữ liệu dưới dạng body Json lên sever<br>
 <b> Câu 14 : Cổng mặc định ứng dụng SpringBoot là 8080. Hãy google cách để thay đổi cổng lắng nghe mặc định </b><br>
