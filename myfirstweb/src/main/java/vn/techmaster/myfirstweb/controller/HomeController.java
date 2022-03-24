@@ -38,8 +38,8 @@ public class HomeController {
         return weight / (height * height);
     }
     ArrayList<Student> listStudent = new ArrayList<Student>() {{
-        listStudent.add(new Student(01,"Tran Van Tam", 26));
-        listStudent.add(new Student(02,"Tran Van Hung", 27));
+        listStudent.add(new Student(01,"Nguyen Manh Cuong", 20));
+        listStudent.add(new Student(02,"Nguyen Van A", 21));
     }};
     public HomeController(ArrayList<Student> listStudent) {
         this.listStudent = listStudent;
