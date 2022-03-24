@@ -4,11 +4,9 @@
 <b>Câu 2 : Tại sao phải đảo ngược tên miền trong <groupId>vn.techmaster</groupId>?</b> <br>
 - Việc đảo ngược tên miền trong groupId giúp chúng ta nhóm các modul của dự án dễ dàng hơn<br>
 <b>Câu 3 : SpringBoot có 2 cơ chế để quản lý thư viện. Hãy kể tên chúng?</b><br>
-Trả lời : <br>
 - Quản lý bằng maven sử dụng dependency trong file pom
 - Quản lý thư viện bằng Gradle<br>
 <b> Câu 4 : File pom.xml có tác dụng gì?</b><br>
-Trả lời :<br>
 - xml là nơi khai báo tất cả những gì liên quan đến dự án được cấu hình qua maven, như khai báo các dependency, version của dự án, tên dự án, repossitory… <br>
 <b> Câu 5 : Trong file pom.xml có các thẻ dependency. Ý nghĩa của chúng là gì?</b> <br>
 - dependency cung cấp tất cả các phụ thuộc và cấu hình tự động cần thiết để phát triển các ứng dụng web.<br>
