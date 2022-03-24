@@ -21,7 +21,7 @@
 - @RequestParam và @PathVariable annotation đều được sử dụng để trích xuất dữ liệu từ request URL
 - @RequestParam được dùng để trích xuất dữ liệu từ request query và có 4 tham số hỗ trợ : +)defaultValue : Đây là giá trị mặc định nếu như giá trị của parameters trên URL rỗng. +)name : tên của parameters binding +)required : Cho biết tham số này là có bắt buộc hay không, nếu "required=true" thì thiếu parameters đó request sẽ fail. +)value : đây là alias cho tên của thuộc tính
 - @PathVariable thì được dùng để trích xuất dữ liệu từ URL path.
-- @PathVariable thì nằm trong dấu xược(/_/) còn @RequestParam thì nằm trong dấu hỏi(?a=x&&b=y)<br>
+- @PathVariable thì nằm trong dấu xược(/_/) còn @RequestParam thì nằm trong dấu hỏi(?a=x && b=y)<br>
 <b> Câu 10 : Thứ tự các thành phần đường dẫn @PathVariable có thể hoán đổi được không?</b><br>
 - Không hoán đổi được phải theo thứ tự <br>
 <b> Câu 11 : @GetMapping khác gì so với @PostMapping?</b><br> 
