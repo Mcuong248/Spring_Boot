@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import vn.techmaster.myfirstweb.model.Student;
 
+// Bài 1
 @Controller
 @RequestMapping("/")
 public class HomeController {
@@ -32,11 +33,15 @@ public class HomeController {
         }
         return stringBuilder + "";
     }
+    
+    // Bài 2
     @PostMapping("/bmi")
     @ResponseBody
     public Double bmi(@RequestParam Double weight, @RequestParam Double height) {
         return weight / (height * height);
     }
+    
+    // Bài 3
     ArrayList<Student> listStudent = new ArrayList<Student>() {{
         listStudent.add(new Student(01,"Nguyen Manh Cuong", 20));
         listStudent.add(new Student(02,"Nguyen Van A", 21));
