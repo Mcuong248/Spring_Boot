@@ -32,6 +32,7 @@ public class HomeController {
         }
         return stringBuilder + "";
     }
+<<<<<<< HEAD:01/myfirstweb/src/main/java/vn/techmaster/myfirstweb/controller/HomeController.java
 
     //Bài 2
     // @GetMapping("/quotes")
@@ -43,13 +44,22 @@ public class HomeController {
     // }
 
     //Bài 3
+=======
+    
+    // Bài 2
+>>>>>>> 640c4a3ef8a4e07810e9b978aeba47ef285d1e8d:myfirstweb/src/main/java/vn/techmaster/myfirstweb/controller/HomeController.java
     @PostMapping("/bmi")
     @ResponseBody
     public double bmi(@RequestParam Double weight, @RequestParam Double height) {
         return weight / (height * height);
     }
+<<<<<<< HEAD:01/myfirstweb/src/main/java/vn/techmaster/myfirstweb/controller/HomeController.java
 
     //Bài 4
+=======
+    
+    // Bài 3
+>>>>>>> 640c4a3ef8a4e07810e9b978aeba47ef285d1e8d:myfirstweb/src/main/java/vn/techmaster/myfirstweb/controller/HomeController.java
     ArrayList<Student> listStudent = new ArrayList<Student>() {{
         listStudent.add(new Student(1,"Nguyen Manh Cuong", 20));
         listStudent.add(new Student(2,"Nguyen Van A", 21));
