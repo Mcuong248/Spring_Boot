@@ -41,6 +41,10 @@ public void updateLogo(String id, String logo_path) {
    employers.put(id, emp);
 }
 
+public Employer deleteById(String id) {
+    // var emp = employers.get(id);
+    return employers.remove(id);
+}
 
 
 @PostConstruct

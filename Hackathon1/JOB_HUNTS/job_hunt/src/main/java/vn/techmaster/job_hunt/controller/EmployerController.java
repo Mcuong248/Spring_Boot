@@ -75,6 +75,13 @@ public String addEmployer(@Valid @ModelAttribute("employer") EmployerRequest emp
   }
 
   return "redirect:/employer";
+}
+
+    @GetMapping(value = "/delete/{id}")
+    public String deleteEmployerByID(@PathVariable String id) {
+      Employer emp = employerRepo.deleteById(id);
+      storageService.deleteFile(emp.getLogo_path());
+      return "redirect:/employer";
     }
 }
 

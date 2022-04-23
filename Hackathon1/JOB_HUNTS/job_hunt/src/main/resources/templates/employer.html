@@ -9,5 +9,6 @@
 <body>
     <h1 th:text="${employer.name}"></h1>
     <img th:src="|/logo/${employer.logo_path}|"/>
+    <a th:href="|/employer/delete/${employer.id}|">Delete</a>
 </body>
 </html>

@@ -27,10 +27,22 @@ public class StorageService {
           // Lấy extension   
         try {
       var is = file.getInputStream();
-      Files.copy(is, Paths.get(path + id + "." + extension), StandardCopyOption.REPLACE_EXISTING);
+      // Files.copy(is, Paths.get(path + id + "." + extension), StandardCopyOption.REPLACE_EXISTING);
+      
+      Files.copy(is, Paths.get("D:\\Techmaster\\Spring_Boot.github\\Spring_Boot\\Hackathon1\\JOB_HUNTS\\job_hunt\\src\\main\\resources\\static\\logo\\" + id + "." + extension), StandardCopyOption.REPLACE_EXISTING);
       return id + "." + extension;
     } catch (IOException e) {
       var msg = String.format("Failed to store file %s", newFilename);
+      throw new StorageException(msg, e);
+    }
+  }
+
+  public void deleteFile(String logoPath){
+    String filePathToDelete = path + logoPath;
+    try {
+      Files.deleteIfExists(Paths.get(filePathToDelete));
+    } catch (IOException e) {
+      var msg = String.format("Failed to delete file %s", filePathToDelete);
       throw new StorageException(msg, e);
     }
   }
